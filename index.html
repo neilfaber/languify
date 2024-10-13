@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <title>Languify</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter Text"></textarea>
+                <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <l1 class="row from">
+                    <div class="icons">
+                        <i class="fas fa-volume-up"></i>
+                        <i class="fas fa-copy"></i>
+                        <select>
+                            <option value="en-US">English</option>
+                            <option value="en-IN">Hindi</option>
+                            <option value="en-NP">Nepali</option>
+                        </select>
+                    </div>
+                </l1>
+                <li class="exchange"><i class="fa fas-exchange-alt"></i></li>
+                <l1 class="row to">
+                    <select>
+                        <option value="en-IN">Hindi</option>
+                        <option value="en-NP">Nepali</option>
+                        <option value="en-US">English</option>
+                    </select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up"></i>
+                        <i class="fas fa-copy"></i>
+                    </div>
+                </l1>
+                
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
